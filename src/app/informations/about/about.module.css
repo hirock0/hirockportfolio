@@ -1,0 +1,19 @@
+#banner{
+    background: url("../../../../public/Images/banner1.png");
+    background-position: center;
+    background-size: cover;
+}
+@media not all and (min-width: 768px) {
+    #banner{
+        background: url("../../../../public/Images/banner2.png");
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media not all and (min-width: 640px) {
+    #banner{
+        background: url("../../../../public/Images/banner3.png");
+        background-position: center;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,11 @@
+#sideMenu{
+    transition: all .5s ease-in-out;
+}
+
+#sideUl a li{
+
+    @apply active:bg-red-900 bg-red-700 p-2 rounded-md
+}
+#sideUl a li:hover{
+    box-shadow: 0 0 5px red;
+}

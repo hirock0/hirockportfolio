@@ -1,0 +1,8 @@
+@media not all and (min-width: 350px) {
+        #loginPalate{
+                @apply w-full
+        }
+        #Fileinput{
+           
+        }
+}

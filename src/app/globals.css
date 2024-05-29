@@ -2,32 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
+html,body{
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+input{
+  @apply text-black
+}
+#page1{
+  background: url("../../public/Images/sunset2.jpg");
+  background-position: center;
+  background-size: cover;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+}
+@media (min-width: 768px) {
+  #page1{
+    background:url("../../public/Images/sunset1.jpg");
+    background-position: center;
+    background-size: cover;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#insidemain{
+  
+}
+#starImage{
+  animation: rotatedstart alternate 5s  ease-in-out infinite;
+}
+@keyframes rotatedstart{
+  from{
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+#downarrow{
+  animation: downArrow alternate 1.5s  ease-in-out infinite;
+}
+@keyframes downArrow{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+#startBtn{
+  animation: startbtnbg alternate 5s  ease-in-out infinite;
+  
+}
+@keyframes startbtnbg{
+  from{
+    background-color: brown;
+  }
+  to{
+    background-color: green;
+  }
+}
+@media not all and (min-width: 480px) {
+    #indicatorImg{
+        @apply opacity-40
+    }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+#text_shadow{
+    text-shadow: 5px 5px 10px black;
+}
+@media not all and (min-width: 768px) {
+  #text_shadow{
+    text-shadow: 3px 2px 4px white;
+}
+}
+#quicjLinksUl a{
+    @apply hover:underline hover:underline-offset-4
 }

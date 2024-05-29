@@ -1,0 +1,16 @@
+
+#navUl a li:hover{
+    text-decoration: 3px yellow underline;
+    text-underline-offset:100%;
+}
+#subsCribeBtn:hover{
+    text-decoration: 3px yellow underline;
+    text-underline-offset:100%;
+    
+}
+@media not all and (min-width: 640px) {
+    #subsCribeBtn:hover{
+        text-decoration: 2px yellow underline;
+        
+    }
+}
