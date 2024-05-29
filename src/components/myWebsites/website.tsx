@@ -40,7 +40,7 @@ export default function Websites() {
             <SwiperSlide key={item._id}>
               <div className=" w-full flex items-center justify-center">
                 <div className=" h-4/5 w-4/5 max-sm:w-full  flex items-center justify-center p-5 backdrop:filter backdrop-blur-3xl opacity-100 rounded-md">
-                  <div className=" relative rounded-md overflow-hidden">
+                  <div className=" max-sm:h-52 relative rounded-md overflow-hidden">
                     <Image
                       src={item.projectImage}
                       alt="img"
